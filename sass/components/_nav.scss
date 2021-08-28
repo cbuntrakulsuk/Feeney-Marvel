@@ -1,0 +1,24 @@
+
+@use '../abstracts' as a;
+@use '../functions/' as *;
+
+
+.navbar {
+    &__container {
+        display:flex;
+        justify-content: space-between;
+        margin-right: rem(25);
+        margin-left: rem(25);
+    }
+
+    &__brand {
+        font-family: a.$primary-font;
+        color: a.$marvel-red;
+        font-size: rem(40);
+        font-weight: 700;
+    }
+
+    &__desktop {
+        display: none;
+    }
+}

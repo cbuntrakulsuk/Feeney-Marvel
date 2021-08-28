@@ -1,0 +1,88 @@
+@use '../abstracts' as a;
+@use '../functions/' as *;
+
+
+.hero {
+    position: relative;
+
+    &::before {
+
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: rem(75);
+        background: a.$marvel-red;
+        opacity: 20%;
+        top: 12.5%;
+    }
+
+    &::after{
+        content: "Welcome To";
+        opacity: 20%;
+        position: absolute;
+        font-size: rem(86);
+        font-family: a.$primary-font;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        top: 0;
+        left: 10%;
+        width: 300px;
+        line-height: 100px;
+        padding-left: 15px;
+    }
+
+    &__container {
+        margin-left: rem(25);
+        margin-right: rem(25);
+        margin-top: rem(40);
+    }
+
+    &__left-col {
+        display: flex;
+        align-items: center;
+        > img {
+            width: rem(150);
+            border-left: 7px solid a.$marvel-red;
+            z-index: 1;
+        }
+    }
+
+    &__text {
+        font-family: a.$primary-font;
+        font-weight: 700;
+        font-size: rem(42);
+        line-height: rem(40);
+        width: 200px;
+        z-index: 1;
+        > span {
+            display: block;
+        }
+    }
+    &--red {
+        color: a.$marvel-red;
+    }
+
+    &__blurb {
+        font-family: a.$secondary-font;
+        margin-top: rem(40);
+    }
+  
+    &__cta {
+        background: a.$marvel-red;
+        text-transform: uppercase;
+        color: a.$secondary-font-color;
+        font-weight: 700;
+        border: 1.15px solid black;
+        width: rem(100);
+        font-size: rem(15);
+        border-radius: rem(4);
+        padding-left: rem(8);
+        padding-right: rem(8);
+        padding-top: rem(2);
+        padding-bottom: rem(2);
+        margin-top: rem(25)
+
+    }
+
+}
