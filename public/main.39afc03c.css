@@ -22,6 +22,7 @@ body {
 
 .hero {
   position: relative;
+  margin-bottom: 3.125rem;
 }
 .hero::before {
   content: "";
@@ -98,6 +99,18 @@ body {
 .resources {
   background-color: #F9E9D7;
   padding-bottom: 3.125rem;
+  position: relative;
+  padding-top: 4.375rem;
+}
+.resources::before {
+  content: "Resources";
+  font-family: "Bebas Neue";
+  color: #BC3838;
+  font-size: 2.875rem;
+  font-weight: 700;
+  position: absolute;
+  top: -2.5%;
+  right: 5%;
 }
 .resources__container {
   display: flex;
@@ -114,7 +127,6 @@ body {
   margin-bottom: 1.5625rem;
 }
 .resources__card__icon {
-  background-color: #E9D7F9;
   border-radius: 1rem;
   height: 9.375rem;
   display: flex;
@@ -126,6 +138,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.resources__card__icon--purple {
+  background-color: #E9D7F9;
+}
+.resources__card__icon--green {
+  background-color: #D7F9D8;
+}
+.resources__card__icon--blue {
+  background-color: #D7E7F9;
 }
 .resources__card__title {
   padding-top: 1.5625rem;
@@ -140,6 +161,31 @@ body {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.about {
+  position: relative;
+}
+.about__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.3125rem;
+}
+.about__container::before {
+  content: "About Me";
+  font-family: "Bebas Neue";
+  color: #BC3838;
+  font-size: 2.875rem;
+  font-weight: 700;
+  position: absolute;
+  top: -7%;
+  right: 5%;
+}
+.about__text {
+  padding: 2.5rem;
+  width: 70%;
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */

@@ -4,6 +4,19 @@
 .resources {
     background-color: a.$section-color;
     padding-bottom: rem(50);
+    position: relative;
+    padding-top: rem(70);
+
+    &::before {
+        content: "Resources";
+        font-family: a.$primary-font;
+        color: a.$marvel-red;
+        font-size: rem(46);
+        font-weight: 700;
+        position:absolute;
+        top: -2.5%;
+        right: 5%;
+    }
 
     &__container {
         display: flex;
@@ -21,7 +34,6 @@
         margin-bottom: rem(25);
 
         &__icon {
-            background-color: a.$hawkeye-bg-color;
             border-radius: rem(16);
             height: rem(150);
             display:flex;
@@ -33,6 +45,16 @@
                 display:flex;
                 align-items: center;
                 justify-content: center;
+            }
+
+            &--purple {
+                background-color: a.$hawkeye-bg-color;
+            }
+            &--green {
+                background-color: a.$hulk-bg-color;
+            }
+            &--blue {
+                background-color: a.$thor-bg-color;
             }
         }
 
@@ -54,3 +76,33 @@
     }
 
 }
+
+
+.about {
+    position: relative;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: rem(85);
+
+        &::before {
+            content: "About Me";
+            font-family: a.$primary-font;
+            color: a.$marvel-red;
+            font-size: rem(46);
+            font-weight: 700;
+            position:absolute;
+            top: -7%;
+            right: 5%;
+        }
+    }
+
+    &__text {
+        padding: rem(40);
+        width: 70%;
+    }
+}
+
