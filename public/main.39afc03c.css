@@ -188,4 +188,48 @@ body {
   width: 70%;
 }
 
+.footer {
+  background: #BC3838;
+  font-family: "Bebas Neue";
+  color: white;
+  line-height: 0rem;
+  position: relative;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.footer__container::before {
+  content: "";
+  background: url("/footer-splash.f0a39e1a.svg");
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.footer__left {
+  padding-right: 3.125rem;
+}
+.footer__left > p {
+  font-size: 1.5625rem;
+  line-height: 0rem;
+}
+.footer__center > span {
+  font-size: 12px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+.footer__center > p {
+  font-size: 8px;
+}
+.footer__right > span {
+  font-size: 12px;
+  line-height: 20px;
+}
+.footer__right > p {
+  font-size: 8px;
+}
+
 /*# sourceMappingURL=/main.39afc03c.css.map */
