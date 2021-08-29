@@ -16,8 +16,38 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
 }
-.navbar__desktop {
+@media screen and (min-width: 480px) {
+  .navbar__brand {
+    font-size: 3.75rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .navbar__mobile-button {
+    display: none;
+  }
+}
+.navbar__links {
   display: none;
+}
+@media screen and (min-width: 600px) {
+  .navbar__links {
+    display: inline-block;
+    font-family: "Bebas Neue";
+    font-size: 1.875rem;
+  }
+  .navbar__links > ul {
+    display: flex;
+    list-style-type: none;
+  }
+  .navbar__links > ul > li {
+    font-family: "Marvel";
+    padding-right: 2.5rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 750px) {
+  .navbar__links > ul > li {
+    font-size: 1.25rem;
+  }
 }
 
 .hero {
