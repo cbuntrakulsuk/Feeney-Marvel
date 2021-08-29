@@ -106,3 +106,20 @@
     }
 }
 
+// responsive media quieries for tablet
+@media only screen and (min-width: 768px) {
+
+    .resources {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+        &::before {
+            top: -6.4%;
+            right: 5%;
+        }
+    }
+
+}
