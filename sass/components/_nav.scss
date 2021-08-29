@@ -16,39 +16,37 @@
         color: a.$marvel-red;
         font-size: rem(40);
         font-weight: 700;
-
-        @media screen and (min-width: 480px) {
-            font-size: rem(60);
-        }
-
     }
-
-    &__mobile-button {
-        @media screen and (min-width: 600px) {
-            display: none;
-        }
-    }
-
     &__links {
         display: none;
-        @media screen and (min-width: 600px) {
-            display: inline-block;
-            font-family: a.$primary-font;
-            font-size: rem(30);
+    }
 
+}
+
+//responsive media queries
+
+@media only screen and (min-width: 768px) {
+
+    .navbar {
+        &__mobile-button {
+            display: none;
+        }
+
+        &__links {
+
+            display: inline-block;
             > ul {
                 display: flex;
                 list-style-type: none;
 
                 > li {
+                    font-size: rem(18);
+                    padding-right: rem(20);
                     font-family: a.$secondary-font;
-                    padding-right: rem(40);
-                    
-                    @media screen and (max-width: 750px) {
-                        font-size: rem(20);
-                    }
                 }
             }
+
         }
     }
+    
 }
