@@ -68,16 +68,16 @@
         }
 
         &__description {
-            font-size: rem(13);
+            font-size: rem(18);
             padding-left: rem(20);
             padding-right: rem(20);
-            padding-bottom: rem(20)
+            padding-bottom: rem(20);
         }
     }
 
 }
 
-
+//consider moving this section to another stylesheet
 .about {
     position: relative;
 
@@ -101,8 +101,9 @@
     }
 
     &__text {
-        padding: rem(40);
-        width: 70%;
+        width: 80%;
+        margin-top: rem(50);
+        margin-bottom: rem(50); 
     }
 }
 
@@ -120,6 +121,19 @@
             top: -6.4%;
             right: 5%;
         }
+
+    }
+
+    .about
+     {
+        &__container { 
+
+            &::before {
+                top: -10%;
+                right: 5%;
+            }
+        }
+
     }
 
 }

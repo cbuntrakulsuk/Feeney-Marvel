@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+p {
+  font-size: 18px;
+}
+
 .navbar__container {
   display: flex;
   justify-content: space-between;
@@ -120,12 +124,13 @@ body {
   .hero::before {
     top: 30%;
   }
+  .hero::after {
+    top: 10%;
+    left: 5%;
+  }
   .hero__blurb {
     font-family: "Marvel";
     margin-top: 3.4375rem;
-  }
-  .hero__blurb > p {
-    margin: 0;
   }
 }
 .resources {
@@ -189,7 +194,7 @@ body {
   font-family: "Bebas Neue";
 }
 .resources__card__description {
-  font-size: 0.8125rem;
+  font-size: 1.125rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-bottom: 1.25rem;
@@ -216,8 +221,9 @@ body {
   right: 5%;
 }
 .about__text {
-  padding: 2.5rem;
-  width: 70%;
+  width: 80%;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -229,6 +235,11 @@ body {
   }
   .resources::before {
     top: -6.4%;
+    right: 5%;
+  }
+
+  .about__container::before {
+    top: -10%;
     right: 5%;
   }
 }
@@ -243,7 +254,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 200px;
+  flex-wrap: wrap;
 }
 .footer__container::before {
   content: "";
@@ -261,19 +273,19 @@ body {
   line-height: 0rem;
 }
 .footer__center > span {
-  font-size: 12px;
+  font-size: 18px;
   line-height: 20px;
   margin-right: 10px;
 }
 .footer__center > p {
-  font-size: 8px;
+  font-size: 12px;
 }
 .footer__right > span {
-  font-size: 12px;
+  font-size: 18px;
   line-height: 20px;
 }
 .footer__right > p {
-  font-size: 8px;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */

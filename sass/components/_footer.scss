@@ -10,12 +10,12 @@
     position: relative;
 
 
-
     &__container {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100px;
+        height: 200px;
+        flex-wrap: wrap;
 
         &::before {
             content: "";
@@ -37,22 +37,22 @@
 
 
         > span {
-            font-size: 12px;
+            font-size: 18px;
             line-height: 20px;
             margin-right: 10px;
         }
         > p {
-            font-size: 8px;
+            font-size: 12px;
         }
     }
 
     &__right {
         > span {
-            font-size: 12px;
+            font-size: 18px;
             line-height: 20px;
         }
         > p {
-            font-size: 8px;
+            font-size: 12px;
         }
 
     }
