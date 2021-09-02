@@ -3,13 +3,14 @@
 
 
 .hero {
+    max-height: 500px;
     &__top {
         background: #24768C;
         display: flex;
         justify-content: center;
         position: relative;
         #avengers {
-            width: 100%;
+            max-width: 100%;
             position: relative;
             top: rem(15);
             z-index: 1;
@@ -41,7 +42,7 @@
         align-items: center;
         background-color: a.$marvel-red;
         font-family: a.$primary-font;
-        font-size: 1.7rem;
+        //font-size: 1.7rem;
         font-weight: 700;
         letter-spacing: rem(1.5);
         color: a.$secondary-font-color;
@@ -60,7 +61,7 @@
             }
         }
         &__bottom {
-            font-size: rem(40);
+            //font-size: rem(40);
         }
     }
 
@@ -77,7 +78,7 @@
             }
         }
         &__bottom {
-            font-size: rem(50);
+            //font-size: rem(50);
             height: 6rem;
         }
     }

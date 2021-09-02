@@ -58,3 +58,46 @@
     }
 
 }
+
+@media only screen and (min-width: 1230px) {
+
+    .footer {
+        &__container {
+            gap: 10%;
+        }
+
+        &__left {
+            > p {
+                font-size: rem(50);
+                line-height: rem(0);
+                font-weight: 700;
+                letter-spacing: 2px;
+            }
+        }
+        &__center {
+            > span {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 20px;
+                margin-right: 10px;
+            }
+            > p {
+                font-size: 18px;
+            }
+
+
+        }
+        &__right {
+            > span {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 20px;
+                margin-right: 10px;
+            }
+            > p {
+                font-size: 18px;
+            }
+
+        }
+    }
+}

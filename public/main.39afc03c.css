@@ -5,7 +5,11 @@ body {
 }
 
 p {
-  font-size: 18px;
+  font-size: clamp(1rem, 6vw, 1.25rem);
+}
+
+h1 {
+  font-size: clamp(1rem, 6vw, 3rem);
 }
 
 .navbar__container {
@@ -49,6 +53,9 @@ p {
     font-size: 1.5rem;
   }
 }
+.hero {
+  max-height: 500px;
+}
 .hero__top {
   background: #24768C;
   display: flex;
@@ -56,7 +63,7 @@ p {
   position: relative;
 }
 .hero__top #avengers {
-  width: 100%;
+  max-width: 100%;
   position: relative;
   top: 0.9375rem;
   z-index: 1;
@@ -86,7 +93,6 @@ p {
   align-items: center;
   background-color: #BC3838;
   font-family: "Bebas Neue";
-  font-size: 1.7rem;
   font-weight: 700;
   letter-spacing: 0.09375rem;
   color: white;
@@ -99,9 +105,6 @@ p {
     width: 60%;
     top: 1.25rem;
   }
-  .hero__bottom {
-    font-size: 2.5rem;
-  }
 }
 @media only screen and (min-width: 2000px) {
   .hero__top #avengers {
@@ -109,7 +112,6 @@ p {
     top: 3rem;
   }
   .hero__bottom {
-    font-size: 3.125rem;
     height: 6rem;
   }
 }
@@ -118,6 +120,7 @@ p {
   padding-bottom: 5rem;
   position: relative;
   padding-top: 4.375rem;
+  margin-top: 5rem;
 }
 .resources::before {
   content: "Resources";
@@ -134,10 +137,11 @@ p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 5%;
 }
 .resources__card {
   background-color: white;
-  width: 13.75rem;
+  max-width: 15rem;
   border-radius: 1rem;
   border: 0.558491px solid rgba(0, 0, 0, 0.2);
   box-shadow: 4.38685px 4.87428px 22.3396px rgba(0, 0, 0, 0.2);
@@ -145,7 +149,7 @@ p {
 }
 .resources__card__icon {
   border-radius: 1rem;
-  height: 9.375rem;
+  max-height: 9.375rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,7 +193,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 5.3125rem;
   padding-top: 3.75rem;
 }
@@ -209,58 +213,34 @@ p {
   margin-bottom: 3.125rem;
 }
 
-@media only screen and (min-width: 768px) {
-  .resources__container {
-    display: flex;
-    justify-content: space-around;
+@media only screen and (min-width: 1230px) {
+  .resources {
+    max-width: 81.25rem;
+    margin: 0 auto;
+    border-radius: 1.875rem;
+    margin-top: 6rem;
   }
   .resources::before {
-    top: -6.4%;
-    right: 5%;
-  }
-
-  .about__container::before {
-    top: -2%;
-    left: 5%;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .resources {
-    margin-right: 9.375rem;
-    margin-top: 8.5rem;
-    height: 200px;
-    margin-bottom: 15.625rem;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    display: flex;
-    justify-content: center;
-  }
-  .resources__container {
-    margin-left: 9rem;
-  }
-  .resources__card {
-    transform: scale(1.15);
-    margin-right: 10rem;
+    top: -5%;
   }
 
   .about {
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    margin-bottom: 50px;
-    margin-left: 150px;
-    display: flex;
-    justify-content: flex-end;
+    max-width: 81.25rem;
+    margin: 0 auto;
+    border-radius: 1.875rem;
   }
   .about__container {
-    margin-top: 0;
+    padding: 3rem;
+    margin-bottom: 3.75rem;
   }
   .about__container::before {
-    top: -4%;
+    top: -2.5%;
   }
   .about__text {
-    padding-left: 9.375rem;
-    width: 65%;
-    transform: scale(1.1);
+    max-width: 50%;
+  }
+  .about #manny-cartoon {
+    width: 135%;
   }
 }
 .footer {
@@ -306,6 +286,36 @@ p {
 }
 .footer__right > p {
   font-size: 12px;
+}
+
+@media only screen and (min-width: 1230px) {
+  .footer__container {
+    gap: 10%;
+  }
+  .footer__left > p {
+    font-size: 3.125rem;
+    line-height: 0rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .footer__center > span {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-right: 10px;
+  }
+  .footer__center > p {
+    font-size: 18px;
+  }
+  .footer__right > span {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-right: 10px;
+  }
+  .footer__right > p {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */

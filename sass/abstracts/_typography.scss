@@ -5,5 +5,10 @@ $primary-font: 'Bebas Neue';
 $secondary-font: 'Marvel';
 
 p {
-    font-size: 18px;
+    //font-size: 18px;
+    font-size: clamp(1rem, 6vw, 1.25rem);
+}
+
+h1 {
+    font-size: clamp(1rem, 6vw, 3rem);
 }
