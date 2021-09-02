@@ -41,6 +41,14 @@ p {
     font-family: "Marvel";
   }
 }
+@media only screen and (min-width: 1400px) {
+  .navbar__brand {
+    font-size: 3.75rem;
+  }
+  .navbar__links > ul > li {
+    font-size: 1.5rem;
+  }
+}
 .hero {
   position: relative;
   margin-bottom: 3.125rem;
@@ -52,7 +60,7 @@ p {
   height: 4.6875rem;
   background: #BC3838;
   opacity: 20%;
-  top: 12.5%;
+  top: 12%;
 }
 .hero::after {
   content: "Welcome To";
@@ -77,6 +85,7 @@ p {
 .hero__left-col {
   display: flex;
   align-items: center;
+  padding-top: 11px;
 }
 .hero__left-col > img {
   width: 9.375rem;
@@ -123,19 +132,55 @@ p {
   }
   .hero::before {
     top: 30%;
+    height: 8rem;
   }
   .hero::after {
     top: 10%;
     left: 5%;
+  }
+  .hero__left-col {
+    padding-top: 30px;
   }
   .hero__blurb {
     font-family: "Marvel";
     margin-top: 3.4375rem;
   }
 }
+@media only screen and (min-width: 1300px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+  }
+  .hero::after {
+    top: 15%;
+    left: 14%;
+  }
+  .hero__left-col {
+    margin-right: 3rem;
+  }
+  .hero__left-col > img {
+    width: 15rem;
+  }
+  .hero__text {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+  .hero__blurb {
+    margin-top: 4rem;
+    max-width: 37.5rem;
+  }
+  .hero__blurb > p {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .hero::after {
+    left: 29%;
+  }
+}
 .resources {
   background-color: #F9E9D7;
-  padding-bottom: 3.125rem;
+  padding-bottom: 5rem;
   position: relative;
   padding-top: 4.375rem;
 }
@@ -202,6 +247,8 @@ p {
 
 .about {
   position: relative;
+  background-color: #F9E9D7;
+  margin-bottom: 5rem;
 }
 .about__container {
   display: flex;
@@ -209,6 +256,7 @@ p {
   align-items: center;
   justify-content: center;
   margin-top: 5.3125rem;
+  padding-top: 3.75rem;
 }
 .about__container::before {
   content: "About Me";
@@ -217,7 +265,7 @@ p {
   font-size: 2.875rem;
   font-weight: 700;
   position: absolute;
-  top: -7%;
+  top: -1.5%;
   right: 5%;
 }
 .about__text {
@@ -229,9 +277,7 @@ p {
 @media only screen and (min-width: 768px) {
   .resources__container {
     display: flex;
-    justify-content: space-between;
-    padding-right: 40px;
-    padding-left: 40px;
+    justify-content: space-around;
   }
   .resources::before {
     top: -6.4%;
@@ -239,8 +285,47 @@ p {
   }
 
   .about__container::before {
-    top: -10%;
-    right: 5%;
+    top: -2%;
+    left: 5%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .resources {
+    margin-right: 9.375rem;
+    margin-top: 8.5rem;
+    height: 200px;
+    margin-bottom: 15.625rem;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .resources__container {
+    margin-left: 9rem;
+  }
+  .resources__card {
+    transform: scale(1.15);
+    margin-right: 10rem;
+  }
+
+  .about {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .about__container {
+    margin-top: 0;
+  }
+  .about__container::before {
+    top: -4%;
+  }
+  .about__text {
+    padding-left: 9.375rem;
+    width: 65%;
+    transform: scale(1.1);
   }
 }
 .footer {
@@ -269,7 +354,7 @@ p {
   padding-right: 3.125rem;
 }
 .footer__left > p {
-  font-size: 1.5625rem;
+  font-size: 2.25rem;
   line-height: 0rem;
 }
 .footer__center > span {
