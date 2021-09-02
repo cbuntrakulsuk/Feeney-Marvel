@@ -11,7 +11,7 @@
         #avengers {
             width: 100%;
             position: relative;
-            top: 15px;
+            top: rem(15);
             z-index: 1;
         }
         &::before {
@@ -29,6 +29,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position-x: center;
+            background-position-y: bottom;  
             width: 100%;
             height: 100%;
 
@@ -41,10 +42,50 @@
         background-color: a.$marvel-red;
         font-family: a.$primary-font;
         font-size: 1.7rem;
+        font-weight: 700;
+        letter-spacing: rem(1.5);
         color: a.$secondary-font-color;
-        height: rem(50);
+        height: rem(64);
+        margin-bottom: rem(80);
     }
 }
+
+@media only screen and (min-width: 1024px) {
+
+    .hero {
+        &__top {
+            #avengers {
+                width: 60%;
+                top: rem(20);
+            }
+        }
+        &__bottom {
+            font-size: rem(40);
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 2000px) {
+
+    .hero {
+        &__top {
+            #avengers {
+                width: 40%;
+                top: rem(48);
+            }
+        }
+        &__bottom {
+            font-size: rem(50);
+            height: 6rem;
+        }
+    }
+
+}
+
+
+
 
 
 // // responsive media quieries for tablet
