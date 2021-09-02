@@ -49,135 +49,47 @@ p {
     font-size: 1.5rem;
   }
 }
-.hero {
+.hero__top {
+  background: #24768C;
+  display: flex;
+  justify-content: center;
   position: relative;
-  margin-bottom: 3.125rem;
 }
-.hero::before {
+.hero__top #avengers {
+  width: 100%;
+  position: relative;
+  top: 15px;
+  z-index: 1;
+}
+.hero__top::before {
   content: "";
+  background: url("/Hero-ray.8da39151.svg");
+  background-size: cover;
   position: absolute;
   width: 100%;
-  height: 4.6875rem;
-  background: #BC3838;
-  opacity: 20%;
-  top: 12%;
+  height: 100%;
 }
-.hero::after {
-  content: "Welcome To";
-  opacity: 20%;
+.hero__top::after {
   position: absolute;
-  font-size: 5.375rem;
-  font-family: "Bebas Neue";
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  top: 0;
-  left: 10%;
-  width: 300px;
-  line-height: 100px;
-  padding-left: 15px;
+  content: "";
+  background: url("/Hero-city.1b49ecc9.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  width: 100%;
+  height: 100%;
 }
-.hero__container {
-  margin-left: 1.5625rem;
-  margin-right: 1.5625rem;
-  margin-top: 2.5rem;
-}
-.hero__left-col {
+.hero__bottom {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-top: 11px;
-}
-.hero__left-col > img {
-  width: 9.375rem;
-  border-left: 7px solid #BC3838;
-  z-index: 1;
-}
-.hero__text {
+  background-color: #BC3838;
   font-family: "Bebas Neue";
-  font-weight: 700;
-  font-size: 2.625rem;
-  line-height: 2.5rem;
-  width: 200px;
-  z-index: 1;
-}
-.hero__text > span {
-  display: block;
-}
-.hero--red {
-  color: #BC3838;
-}
-.hero__blurb {
-  font-family: "Marvel";
-  margin-top: 2.5rem;
-}
-.hero__cta {
-  background: #BC3838;
-  text-transform: uppercase;
+  font-size: 1.7rem;
   color: white;
-  font-weight: 700;
-  border: 1.15px solid black;
-  width: 6.25rem;
-  font-size: 0.9375rem;
-  border-radius: 0.25rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
-  margin-top: 1.5625rem;
+  height: 3.125rem;
 }
 
-@media only screen and (min-width: 768px) {
-  .hero__container {
-    display: flex;
-  }
-  .hero::before {
-    top: 30%;
-    height: 8rem;
-  }
-  .hero::after {
-    top: 10%;
-    left: 5%;
-  }
-  .hero__left-col {
-    padding-top: 30px;
-  }
-  .hero__blurb {
-    font-family: "Marvel";
-    margin-top: 3.4375rem;
-  }
-}
-@media only screen and (min-width: 1300px) {
-  .hero {
-    display: flex;
-    justify-content: center;
-  }
-  .hero::after {
-    top: 15%;
-    left: 14%;
-  }
-  .hero__left-col {
-    margin-right: 3rem;
-  }
-  .hero__left-col > img {
-    width: 15rem;
-  }
-  .hero__text {
-    font-size: 3.5rem;
-    line-height: 3rem;
-  }
-  .hero__blurb {
-    margin-top: 4rem;
-    max-width: 37.5rem;
-  }
-  .hero__blurb > p {
-    font-size: 1.25rem;
-  }
-}
-@media only screen and (min-width: 2000px) {
-  .hero::after {
-    left: 29%;
-  }
-}
 .resources {
   background-color: #F9E9D7;
   padding-bottom: 5rem;
