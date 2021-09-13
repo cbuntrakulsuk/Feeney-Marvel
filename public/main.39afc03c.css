@@ -41,6 +41,10 @@ h1 {
 }
 .navbar__links__item {
   text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  color: #BC3838;
+  font-size: 1.25rem;
 }
 
 @media only screen and (min-width: 768px) {

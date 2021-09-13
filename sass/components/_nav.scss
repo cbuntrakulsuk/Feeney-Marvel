@@ -35,6 +35,10 @@
         }
         &__item {
             text-decoration: none;
+            text-transform: uppercase;
+            font-family: a.$primary-font;
+            color: a.$marvel-red;
+            font-size: rem(20);
         }
     }
 }
