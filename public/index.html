@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="/main.39afc03c.css">
 <script src="/main.39afc03c.js"></script></head>
 <body>
-
     <div class="navbar">
         <div class="navbar__container">
             <div class="navbar__brand">feeney</div>
-            <img class="navbar__mobile-button" src="/mobile-menu.db0d12b3.svg" alt="mobile menu">
-            <nav class="navbar__links">
+            <a id="hamBtn" href="#"><img class="navbar__mobile-button" #id="myBtn2" src="/mobile-menu.db0d12b3.svg" alt="mobile menu"></a>
+
+            <nav id="nav-link" class="navbar__links">
                 <ul>
-                    <li>For Students</li>
-                    <li>For Parents</li>
-                    <li>About</li>
+                    <li><a class="navbar__links__item" href="#">Students</a></li>
+                    <li><a class="navbar__links__item" href="#">Parents</a></li>
+                    <li><a class="navbar__links__item" href="#">About</a></li>
                 </ul>
         </nav></div>
     </div>
@@ -36,7 +36,7 @@
     <section class="resources">
         <div class="resources__container">
             <!-- student portal card -->
-            <div class="resources__card">
+            <div class="resources__card card-hover">
                 <div class="resources__card__icon--purple resources__card__icon">
                     <img src="/hawkeye@2x.d53794e1.svg" Alt="hawkeye">
                 </div>
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <!-- parent portal card -->
-            <div class="resources__card">
+            <div class="resources__card card-hover">
                 <div class="resources__card__icon resources__card__icon--green">
                     <img src="/hulk@2x.c7833c99.svg" Alt="Hulk">
                 </div>
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <!-- zoom meeting card -->
-            <div class="resources__card">
+            <div class="resources__card card-hover">
                 <div class="resources__card__icon resources__card__icon--blue">
                     <img src="/thor@2x.bfa32e56.svg" Alt="thor">
                 </div>
@@ -109,6 +109,9 @@
             </div>
         </div>
     </section>
+
+    <!-- Script section -->
+    <script type="text/javascript" src="/script.d573be0b.js" charset="utf-8"></script>
 
 </body>
 </html>

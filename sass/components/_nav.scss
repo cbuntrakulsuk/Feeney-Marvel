@@ -6,7 +6,9 @@
 .navbar {
     &__container {
         display:flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
         margin-right: rem(25);
         margin-left: rem(25);
     }
@@ -19,8 +21,22 @@
     }
     &__links {
         display: none;
-    }
 
+        &__open { //open hamburger menu
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        }
+
+        > ul {
+            list-style-type: none;
+        }
+        &__item {
+            text-decoration: none;
+        }
+    }
 }
 
 // responsive media quieries for tablet
@@ -32,7 +48,6 @@
         }
 
         &__links {
-
             display: inline-block;
             > ul {
                 display: flex;

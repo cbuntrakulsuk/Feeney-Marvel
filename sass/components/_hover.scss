@@ -1,0 +1,10 @@
+@use '../abstracts/' as a;
+@use '../functions/' as *;
+
+.card-hover {
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.125);
+        transition: all .3s ease-out;
+    }
+}

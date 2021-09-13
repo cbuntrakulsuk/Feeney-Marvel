@@ -2,11 +2,12 @@
 @use '../functions/' as *;
 
 .resources {
-    background-color: a.$section-color;
-    padding-bottom: 5rem;
     position: relative;
+    background-color: a.$section-color;
     padding-top: rem(70);
+    padding-bottom: rem(30);
     margin-top: rem(80);
+    margin-bottom: rem(80);
 
     &::before {
         content: "Resources";
@@ -82,17 +83,15 @@
 //consider moving this section to another stylesheet
 .about {
     position: relative;
-    //padding-bottom: 5rem;
     background-color: a.$section-color;
-    margin-bottom: 5rem;
-
+    margin-bottom: rem(80);
+    padding-top: rem(70);
     &__container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
-        margin-top: rem(85);
-        padding-top: rem(60);
+
 
         &::before {
             content: "About Me";
@@ -118,8 +117,11 @@
     .resources {
         max-width: rem(1300);
         margin: 0 auto;
+        margin-bottom: rem(80);
         border-radius: rem(30);
         margin-top: rem(96);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.17);
 
         &::before {
             top: -5%;
@@ -129,11 +131,13 @@
     .about {
         max-width: rem(1300);
         margin: 0 auto;
+        margin-bottom: rem(80);
         border-radius: rem(30);
+        padding-top: 0;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.17);
 
         &__container {
-            padding: 3rem;
-            margin-bottom: rem(60);
             &::before {
                 top: -2.5%;
             }
@@ -147,96 +151,4 @@
             width: 135%;
         }
     }
-
-
-
-
-
 }
-
-
-
-
-
-
-
-// // responsive media quieries for (tablet)
-// @media only screen and (min-width: 768px) {
-
-//     .resources {
-//         &__container {
-//             display: flex;
-//             justify-content: space-around;
-//             //padding-right: 40px;
-//             //padding-left: 40px;
-//         }
-//         &::before {
-//             top: -6.4%;
-//             right: 5%;
-//         }
-
-//     }
-
-//     .about
-//      {
-//         &__container { 
-
-//             &::before {
-//                 top: -2%;
-//                 left: 5%;
-//             }
-//         }
-
-//     }
-
-// }
-
-// //responsive media queries for large screens (laptop)
-// @media only screen and (min-width: 1400px) {
-
-//     .resources {
-//         margin-right: rem(150);
-//         margin-top: 8.5rem;
-//         height: 200px;
-//         margin-bottom: rem(250);
-//         border-top-right-radius: 30px;
-//         border-bottom-right-radius: 30px;
-//         display: flex;
-//         justify-content: center;
-
-//         &__container {
-//             margin-left: 9rem;
-//         }
-//         &__card {
-//             transform: scale(1.15);
-//             margin-right: 10rem;
-//         }
-
-//     }
-
-//     .about {            
-//         border-top-left-radius: 30px;
-//         border-bottom-left-radius: 30px;
-//         margin-bottom: 50px;
-//         margin-left: 150px;
-//         display: flex;
-//         justify-content: flex-end;
-
-//         &__container {
-//             margin-top: 0;
-
-//             &::before {
-//                 top: -4%;
-//             }
-//         }
-
-//         &__text {
-//             padding-left: rem(150);
-//             width: 65%;
-//             transform: scale(1.10)
-//             ;
-//         }
-//     }
-
-
-// }
