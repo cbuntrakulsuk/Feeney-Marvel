@@ -9,3 +9,9 @@ hamBtn.addEventListener("click", function() {
     navLinks.classList.add('navbar__links__open')
   }
   });
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 786) {
+      navLinks.classList.remove('navbar__links__open')
+    }
+});
