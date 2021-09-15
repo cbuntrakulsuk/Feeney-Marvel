@@ -28,8 +28,15 @@
         color: a.$marvel-red;
         font-size: rem(40);
         font-weight: 700;
-
+        
+        a {
+            text-decoration: none;
+        }
+        a:visited {
+            color: a.$marvel-red;
+          }
     }
+
     &__links {
         position: absolute;
         top: -800%; //position off screen for transition effect
@@ -44,7 +51,7 @@
         top: 0;
         left: 0;
         background-color: white;
-        transition: ease-in;
+        transition-timing-function: ease-in-out;
         transition-duration: 200ms;
         z-index: -1;
         }
@@ -58,6 +65,8 @@
             font-family: a.$primary-font;
             color: a.$marvel-red;
             font-size: rem(50);
+            font-weight: 700;
+            letter-spacing: 1px;
         }
     }
 }

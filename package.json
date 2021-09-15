@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel sass/index.html -d public",
+    "dev": "parcel sass/index.html students.html -d public",
     "build": "parcel build sass/index.html -d public --public-url ./"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
     "parcel-bundler": "^1.12.5",
     "sass": "^1.38.1"
   }

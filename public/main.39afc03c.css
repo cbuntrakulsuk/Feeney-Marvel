@@ -10,6 +10,9 @@ p {
 
 h1 {
   font-size: clamp(1rem, 6vw, 3rem);
+  font-family: "Bebas Neue";
+  color: #BC3838;
+  font-weight: 700;
 }
 
 .navbar {
@@ -36,6 +39,12 @@ h1 {
   font-size: 2.5rem;
   font-weight: 700;
 }
+.navbar__brand a {
+  text-decoration: none;
+}
+.navbar__brand a:visited {
+  color: #BC3838;
+}
 .navbar__links {
   position: absolute;
   top: -800%;
@@ -50,7 +59,7 @@ h1 {
   top: 0;
   left: 0;
   background-color: white;
-  transition: ease-in;
+  transition-timing-function: ease-in-out;
   transition-duration: 200ms;
   z-index: -1;
 }
@@ -63,6 +72,8 @@ h1 {
   font-family: "Bebas Neue";
   color: #BC3838;
   font-size: 3.125rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -93,9 +104,6 @@ h1 {
   .navbar__links > ul > li {
     font-size: 1.5rem;
   }
-}
-.hero {
-  max-height: 500px;
 }
 .hero__top {
   background: #24768C;
@@ -140,6 +148,7 @@ h1 {
   color: white;
   height: 4rem;
   margin-bottom: 5rem;
+  font-size: clamp(1rem, 6vw, 3rem);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -366,6 +375,56 @@ h1 {
   cursor: pointer;
   transform: scale(1.125);
   transition: all 0.3s ease-out;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3.125rem;
+  margin-right: 3.125rem;
+}
+
+.subjects {
+  margin-left: 3.125rem;
+  margin-right: 3.125rem;
+}
+.subjects__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+.subjects__container__description {
+  width: 500px;
+}
+.subjects__container__image {
+  margin-top: 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  order: 1;
+}
+.subjects__container__image img {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1230px) {
+  .subjects {
+    max-width: 81.25rem;
+    margin: 0 auto;
+  }
+  .subjects__container__image {
+    order: 0;
+  }
+
+  .heading {
+    max-width: 81.25rem;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */
