@@ -9,6 +9,11 @@
     margin-top: rem(80);
     margin-bottom: rem(80);
 
+    a, a:visited {
+        text-decoration: none;
+        color: black;
+    }
+
     &::before {
         content: "Resources";
         font-family: a.$primary-font;

@@ -19,17 +19,17 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-bottom: rem(50);
+        margin-bottom: rem(100);
 
         &__description {
-            width: 500px;        
+            width: rem(700);      
         }
         &__image {
             margin-top: rem(30);
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 500px;
+            width: rem(600);
             order: 1;
             img {
                 width: 50%;

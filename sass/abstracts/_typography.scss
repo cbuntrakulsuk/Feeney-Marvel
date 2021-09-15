@@ -17,3 +17,10 @@ h1 {
     color: $marvel-red;
     font-weight: 700;
 }
+
+h2 {
+    font-size: clamp(1rem, 6vw, 2rem);
+    font-family: $primary-font;
+    color: $marvel-red;
+    font-weight: 700;
+}
