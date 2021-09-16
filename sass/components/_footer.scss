@@ -6,16 +6,35 @@
     background: a.$marvel-red;
     font-family: a.$primary-font;
     color: a.$secondary-font-color;
-    line-height: rem(0);
     position: relative;
+
+    &__box {
+        width: 200px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+        
+        &__brand {
+            font-size: 36px !important;
+        }
+
+        > span {
+            font-size: 20px;
+        }
+
+        > p {
+            font-size: 16px;
+            margin: 0;
+        }
+    }
 
 
     &__container {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 200px;
         flex-wrap: wrap;
+        flex-direction: column;
 
         &::before {
             content: "";
@@ -26,78 +45,64 @@
             height: 100%;
         }
     }
-    &__left {
-        padding-right: rem(50);
-        > p {
-            font-size: rem(36);
-            line-height: rem(0);
-        }
-    }
-    &__center {
-
-
-        > span {
-            font-size: 18px;
-            line-height: 20px;
-            margin-right: 10px;
-        }
-        > p {
-            font-size: 12px;
-        }
-    }
-
-    &__right {
-        > span {
-            font-size: 18px;
-            line-height: 20px;
-        }
-        > p {
-            font-size: 12px;
-        }
-
-    }
 
 }
 
-@media only screen and (min-width: 1230px) {
+@media only screen and (min-width: 768px) {
 
     .footer {
+
         &__container {
-            gap: 10%;
+            flex-direction: row;
         }
 
-        &__left {
-            > p {
-                font-size: rem(50);
-                line-height: rem(0);
-                font-weight: 700;
-                letter-spacing: 2px;
-            }
+        &__box {
+            text-align: left;
+            padding-left: 50px;
         }
-        &__center {
-            > span {
-                font-size: 30px;
-                font-weight: 700;
-                line-height: 20px;
-                margin-right: 10px;
-            }
-            > p {
-                font-size: 18px;
-            }
-
-
-        }
-        &__right {
-            > span {
-                font-size: 30px;
-                font-weight: 700;
-                line-height: 20px;
-                margin-right: 10px;
-            }
-            > p {
-                font-size: 18px;
-            }
-
-        }
+    
     }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .footer {
+        &::before {
+            content:"mrfeeneysclass.com 2021";
+            position: absolute;
+            bottom:0;
+            right:0;
+            margin-right: 50px;
+            font-size: 18px;
+        }
+
+        &__container {
+            flex-direction: row;
+            height: rem(250);
+
+        }
+
+        &__box {
+            text-align: left;
+            padding-left: 70px;
+
+            &__brand {
+                font-size: 45px !important;
+            }
+    
+            > span {
+                font-size: 30px;
+            }
+    
+            > p {
+                font-size: 18px;
+                margin: 0;
+            }
+        }
+    
+    }
+
+
 }

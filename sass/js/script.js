@@ -20,5 +20,6 @@ window.addEventListener("resize", () => {
 $('.button').click(function() {
 	$(this).closest('.accordian__section').siblings().find('.panel').slideUp(400);
 	$(this).closest('.accordian__section').find('.panel').slideToggle(400);
+  $(this).closest('.accordian__section').find('.button').toggleClass("open");
 	return false;
 });

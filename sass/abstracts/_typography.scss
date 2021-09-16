@@ -24,3 +24,12 @@ h2 {
     color: $marvel-red;
     font-weight: 700;
 }
+
+a, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: $marvel-red;
+}

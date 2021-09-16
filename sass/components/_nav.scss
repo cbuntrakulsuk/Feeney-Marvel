@@ -41,6 +41,10 @@
         position: absolute;
         top: -800%; //position off screen for transition effect
 
+        a{
+            color: a.$marvel-red;
+        }
+
         &__open { //open hamburger menu
         display: flex;
         flex-wrap: wrap;
@@ -58,12 +62,12 @@
 
         > ul {
             list-style-type: none;
+            color: a.$marvel-red;
         }
         &__item {
             text-decoration: none;
             text-transform: uppercase;
             font-family: a.$primary-font;
-            color: a.$marvel-red;
             font-size: rem(50);
             font-weight: 700;
             letter-spacing: 1px;
@@ -93,7 +97,7 @@
                 }
             }
             &__item {
-                font-size: rem(25);
+                font-size: rem(30);
             }
 
         }
@@ -107,10 +111,8 @@
             font-size: rem(60);
         }
         &__links {
-            > ul {
-                > li {
-                    font-size: 1.50rem;
-                }
+            &__item {
+                font-size: rem(35);
             }
         }
     }
